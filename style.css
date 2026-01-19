@@ -37,7 +37,7 @@ nav{
     align-items: center;
 }
 
-.logo h1{
+.logo h2{
     color: #FFFFFF;
 }
 
@@ -74,6 +74,113 @@ nav{
     display: none;
     cursor: pointer;
 }
+
+#banner{
+    width: 100%;
+    height: 760px;
+    background: url(./assets/hero-bg.png);
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
+    padding-top: 101px;
+}
+
+.banner-container{
+    max-width: 550px;
+    height: 558px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.banner-circle{
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+}
+
+.microphone{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 200px;
+}
+
+.banner-text{
+    text-align: center;
+    margin-top: 40px;
+}
+.banner-text h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.banner-text p{
+    font-size: 16px;
+    font-weight: 400px;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+.btn-holder{
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+.spotify{
+    border: none;
+    background: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-bg,
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-bg{
+    padding: 12px 20px;
+    background: linear-gradient(to top right, #F7E93F 0%, #FB09B4 50%, #9100F8 100%);
+    border-radius: 10000px;
+    cursor: pointer;
+    
+}
+
+.subscribe{
+    padding: 12px 20px;
+    background: none;
+    border-radius: 10000px;
+    cursor: pointer;
+    border: 0.5px solid #00FF88;
+}
+
+.message{
+    border: none;
+    background: none;
+    color: #00FF88;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
 
 @media screen and (max-width: 576px){
     header{
