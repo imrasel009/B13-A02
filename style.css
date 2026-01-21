@@ -252,3 +252,71 @@ header hr{
     opacity: 80%;
     line-height: 20px;
 }
+
+#services{
+    width: 100%;
+    height: 1122px;
+    background-color: #230E3D;
+    padding: 120px 200px;
+    text-align: center;
+}
+
+#services h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.service-container{
+    display: grid;
+    height: 783px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card{
+    background-color: #351165a5;
+    border-radius: 40px;
+    padding: 40px;
+    text-align: left;
+    align-content: center;
+}
+
+.service-card h4{
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+.service-card p{
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 60%;
+    margin-top: 16px;
+}
+
+#card-1{
+    grid-area: card-1;
+}
+#card-2{
+    grid-area: card-2;
+}
+#card-3{
+    grid-area: card-3;
+}
+#card-4{
+    grid-area: card-4;
+}
+#card-5{
+    grid-area: card-5;
+}
+
+.service-container{
+    grid-template-areas: 
+        "card-1 card-2 card-2"
+        "card-1 card-3 card-3"
+        "card-4 card-4 card-5"
+}
