@@ -29,6 +29,7 @@ header{
 }
 
 nav{
+    height: 92px;
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
@@ -39,6 +40,8 @@ nav{
 
 .logo h2{
     color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .menu ul{
@@ -75,6 +78,12 @@ nav{
     cursor: pointer;
 }
 
+header hr{
+    color: #FFFFFF;
+    opacity: 10%;
+    margin-bottom: 80px; 
+}
+
 #banner{
     width: 100%;
     height: 760px;
@@ -94,23 +103,23 @@ nav{
 }
 
 .banner-circle{
-  position: relative;
-  width: 350px;
-  height: 350px;
+    position: relative;
+    width: 350px;
+    height: 350px;
 }
 
 .circle {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .microphone{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
-  height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 200px;
 }
 
 .banner-text{
@@ -123,11 +132,30 @@ nav{
     color: #FFFFFF;
 }
 
+.new{
+    background-color: #00FF88;
+    width: 75px;
+    height: 38px;
+    border-radius: 1000px;
+    text-align: center;
+    padding-top: 8px;
+
+    position: absolute;
+    top: 12px;
+    left: 252px;
+}
+
+.new p{
+    font-size: 18px;
+    font-weight: 600px;
+    color: #1A0B2E;
+}
 .banner-text p{
     font-size: 16px;
     font-weight: 400px;
     color: #FFFFFF;
     margin-top: 8px;
+    opacity: 80%;
 }
 
 .btn-holder{
@@ -178,30 +206,49 @@ nav{
     cursor: pointer;
 }
 
-
-
-
-
-@media screen and (max-width: 576px){
-    header{
-    height: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
-    nav{
+#about{
     width: 100%;
-    }
-    .logo h1{
-        font-size: large;
-        text-wrap: inherit;
-    }
-
-    .menu , .btn-container{
-        display: none;
-    }
-
-    .hamburger{
-    display: block;
-    cursor: pointer;
+    height: 646px;
+    background-color: #1A0B2E;
+    padding: 50px 200px 150px 200px;
+    text-align: center;
 }
+
+.about-text h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.about-text p{
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 80%;
+    margin-bottom: 80px;
+}
+
+.about-text hr{
+    color: #FFFFFF;
+    opacity: 10%;
+    margin-bottom: 80px;
+}
+
+.about-ratings{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ratings-card h1{
+    font-size: 48px;
+    font-weight: 900;
+    height: 59px;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+
+.ratings-card p{
+    color:#FFFFFF;
+    opacity: 80%;
+    line-height: 20px;
 }
